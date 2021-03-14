@@ -5,7 +5,7 @@ image: /img/backpack-guide.jpg
 heading: Outdoor Adventure Backpack
 subheading: Looking For That ‘Buying For Life’ Backpack?
 mainpitch:
-  title: Why Kaldi
+  title: Best Travel Backpack 2021 A Backpack Guide
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
