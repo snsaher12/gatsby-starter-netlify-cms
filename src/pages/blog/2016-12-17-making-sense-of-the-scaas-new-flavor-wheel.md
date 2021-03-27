@@ -13,8 +13,11 @@ description: >
 featuredpost: true
 featuredimage: /img/hiking-backpack.jpg
 tags:
-  - flavor
-  - tasting
+  - Hiking
+  - Backpack
+  - Howtochoose
+  - How To Choose Hiking Backpack
+  - ""
 ---
 ![How To Choose Hiking Backpack](/img/hiking-backpack.jpg "Hiking Backpack")
 
