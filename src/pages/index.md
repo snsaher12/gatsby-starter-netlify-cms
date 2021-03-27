@@ -7,10 +7,13 @@ subheading: Looking For That ‘Buying For Life’ Backpack?
 mainpitch:
   title: Best Travel Backpack 2021 A Backpack Guide
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Your backpack will be one of the most important gear decisions you make if
+    you're planning a fantastic thru-hike or a fast weekend trip. We'll help you
+    pick the right pack for you, from frameless lightweight backpacking to
+    durable, heavy-duty cruisers, so you can stay comfortable on the path for
+    years to come.
+
+    There are many features to look upon before buying the final hiking backpack. The most important ones are:
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
