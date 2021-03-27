@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: How To Choose Hiking Backpack
+title: How To Choose Hiking Backpack?
 date: 2016-12-17T15:04:10.000Z
 description: >
   Your backpack will be one of the most important gear decisions you make if
