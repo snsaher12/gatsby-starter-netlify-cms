@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Best Backpacks Guide
 image: /img/backpack-guide.jpg
-heading: Outdoor Adventure Backpack
+heading: How To Choose Hiking Backpack?
 subheading: Looking For That ‘Buying For Life’ Backpack?
 mainpitch:
   title: Best Travel Backpack 2021 A Backpack Guide
