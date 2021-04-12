@@ -58,38 +58,28 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
-    quote: Kaldi is the place to go if you want the best quality coffee. I love
-      their stance on empowering farmers and transparency.
+  - author: Luvin' retirement ol' gal
+    quote: The expansion is generous and makes this accommodate a WHOLE LOT of
+      stuff. The chest strap keeps even a heavy load stable. There are many
+      pockets of different sizes and shapes, plus a water bottle holder. When I
+      got caught in a sudden cloud burst, the clothing, book, and cell phone
+      inside it stayed nice and dry. I am NOT the typical user ... I do not do
+      serious hiking. I am a senior citizen with two bad knees, and I get around
+      well with two canes. Aquatherapy helps, so I use this to tote wet beach
+      towels, water bottle, water shoes, sun block, etc.
+  - author: Melissa
+    quote: We are able to fit a multitude of items in it with no problem (heavy and
+      light). All together, the items make 50lbs. The bag has been carried
+      around and tested without any problems occurring. If more weight was
+      needed to be added, we are positive that this bag could handle it.
 full_image: /img/products-full-width.jpg
 pricing:
-  heading: Monthly subscriptions
-  description: We make it easy to make great coffee a part of your life. Choose
-    one of our monthly subscription plans to receive great coffee at your
-    doorstep each month. Contact us about more details and payment info.
+  heading: Get It Only IN $37.99
+  description: Pans Backpack for Men Large Military Backpack
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - price: "37.99"
+      plan: Backpack for Men
+      description: Backpack for Men
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
-      price: "50"
-    - description: Great for avid drinkers, java-loving couples and bigger crowds
-      items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: "80"
-    - description: Want a few tiny batches from different varieties? Try our custom plan
-      items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: ??
+        - https://amzn.to/3d9qEmM
 ---
