@@ -1,115 +1,68 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import SocialIcons from "./SocialIcons.js";
+import SiteMetaData from "./SiteMetadata";
+import { LinkFix } from "./SimpleFunctions";
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+const Footer = () => {
+  const [footerBarActiveClass, setFooterBarActiveClass] = useState("");
+  const [footerActive, setFooterActive] = useState(false);
+  const { title, logoLarge, footerNav, dmca, dmcaLink } = SiteMetaData();
+  const img = logoLarge?.base;
+  const imgWidth = logoLarge.childImageSharp?.original?.width;
+  const imgHeight = logoLarge.childImageSharp?.original?.height;
 
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-              </div>
-            </div>
+  const toggleFooterHamburger = () => {
+    !footerActive ? setFooterBarActiveClass("is-active") : setFooterBarActiveClass("");
+    setFooterActive(!footerActive);
+  };
+
+  return (
+    <footer className="footer">
+      <div className="footer-bottom">
+        <div className="footer-logo has-text-centered">
+          <div className="logo-container">
+            <Link to="/">
+              <img src={`/img/${img}`} alt={title} loading="lazy" width={imgWidth} height={imgHeight} />
+            </Link>
           </div>
         </div>
-      </footer>
-    )
-  }
-}
+        {/* Hamburger menu */}
+        <div className="footernav has-text-centered">
+          {/* eslint-disable */}
+          <div className={`footer-burger burger ${footerBarActiveClass}`} data-target="footerMenu" onClick={() => toggleFooterHamburger()}>
+            <span />
+            <span />
+            <span />
+          </div>
 
-export default Footer
+          {/* eslint-enable */}
+          <div id="footerMenu" className={`footer-menu ${footerBarActiveClass}`}>
+            <div className="footerbar">
+              {footerNav.map((item, index) => {
+                return (
+                  <Link className="footerbar-item" to={LinkFix(item)} key={index}>
+                    {item.title}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+          <SocialIcons />
+          <div className="footer-text">
+            {dmca && (
+              <div className="protected-img">
+                <a href={dmcaLink}>
+                  <img src="/useful-img/dmca.png" alt="DMCA.com Protection Status" loading="lazy" width="121" height="24" />
+                </a>
+              </div>
+            )}
+            <p>{title} © 2021. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
