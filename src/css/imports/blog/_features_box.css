@@ -1,0 +1,21 @@
+.features_box {
+  border: 2px solid var(--custom-color-3);
+  background: var(--custom-color-1);
+}
+.features_box h3 {
+  background: var(--custom-color-3);
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  color: var(--custom-color-8);
+}
+.features_box ul {
+  padding: 20px;
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .features_box ul {
+    padding: 10px;
+  }
+}

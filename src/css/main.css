@@ -1,0 +1,18 @@
+/* Main CSS */
+@import "./imports/_404.css";
+@import "./imports/_breadcrumbs.css";
+@import "./imports/_common.css";
+@import "./imports/_contact-form.css";
+@import "./imports/_font-family.css";
+@import "./imports/_footer.css";
+@import "./imports/_navbar.css";
+@import "./imports/_social-icons.css";
+
+/* Index */
+@import "./imports/_index.css";
+
+/* Category */
+@import "./imports/_category.css";
+
+/* Blog */
+@import "./imports/_blog.css";

@@ -1,0 +1,64 @@
+.post-top-section {
+  display: flex;
+  justify-content: space-between;
+}
+.post-info-item svg {
+  width: 14px;
+}
+.post-info-item {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  color: var(--custom-color-4);
+}
+.post-info-item p {
+  margin: 0 !important;
+  line-height: 16px !important;
+  padding-left: 5px;
+}
+.post-info-section {
+  display: flex;
+}
+.post-social-section .btn {
+  margin: 4px;
+  position: relative;
+  margin: 10px 1px;
+  border: none;
+  border-radius: 3px;
+  white-space: normal;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+}
+.post-social-section .btn:active,
+.post-social-section .btn:focus,
+.post-social-section .btn:hover {
+  box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+}
+.post-social-section .btn svg {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  width: 20px;
+}
+/* purgecss ignore */
+.disqus-comment-count {
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .post-top-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .post-top-section {
+    align-items: flex-start;
+  }
+  .post-social-section {
+    margin: 15px auto 0 auto;
+  }
+}

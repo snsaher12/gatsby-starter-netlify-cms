@@ -1,0 +1,26 @@
+.box_text {
+  position: relative;
+  margin-bottom: 20px;
+}
+.box_inner_text {
+  overflow-y: hidden;
+}
+.box_text_btn {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  left: 50%;
+  width: 103%;
+  background-image: linear-gradient(to bottom, transparent, #e2e2e2);
+  transform: translateX(-50%);
+  text-align: center;
+}
+.box_text_btn button {
+  font-size: 18px;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #1f9de0;
+  color: #fff;
+  font-weight: 500;
+}

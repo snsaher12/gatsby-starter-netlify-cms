@@ -1,0 +1,47 @@
+.btp {
+  position: fixed;
+  bottom: 140px;
+  right: -70px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--custom-color-5);
+  border: none;
+  border-radius: 2px;
+  color: var(--custom-color-7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s right ease-out;
+  z-index: 1;
+}
+.btp.active {
+  right: 70px;
+}
+.btp svg {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1403px) {
+  .btp {
+    bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .btp {
+    z-index: 1;
+  }
+}
+@media (max-width: 1023px) {
+  .btp {
+    bottom: 90px;
+  }
+  .btp.active {
+    right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .btp {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,15 @@
+.notfound_title {
+  text-align: center;
+}
+.notfound_text {
+  text-align: center;
+  font-size: 26px;
+  color: var(--custom-color-4);
+}
+.notfound_top_section {
+  margin-bottom: 30px;
+}
+.notfound-page .category-section h2 {
+  font-size: 30px;
+  font-weight: 500;
+}

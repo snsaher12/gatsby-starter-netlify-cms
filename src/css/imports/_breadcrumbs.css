@@ -1,0 +1,50 @@
+.breadcrumbs {
+  padding: 10px 0.75em;
+  border-bottom: 1px solid var(--custom-color-3);
+}
+.breadcrumbs .container {
+  display: flex;
+}
+.bread-item,
+.bread-item a {
+  color: var(--custom-color-4);
+}
+.bread-item p {
+  color: var(--custom-color-5);
+}
+.bread-item > a:hover {
+  color: var(--custom-color-5);
+}
+.bread-item,
+.breadcrumbs .bread-item p,
+.bread-item span {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.bread-item a,
+.bread-item p {
+  padding: 0 8px;
+}
+.breadcrumbs .bread-item p {
+  padding-right: 0;
+}
+.bread-item:first-child a {
+  padding-left: 0;
+}
+.breadcrumbs .bread-item:last-child,
+.breadcrumbs .bread-item p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 1023px) {
+  .blog-post .breadcrumbs {
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-post .breadcrumbs {
+    margin-bottom: 10px;
+  }
+}

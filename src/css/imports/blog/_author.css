@@ -1,0 +1,24 @@
+.author-page {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.author-top {
+  padding: 1.5rem 1rem 0;
+}
+.author-page .lp-title {
+  font-size: 23px;
+  padding: 10px;
+  border-top: 5px solid #e5e5e5;
+}
+@media (max-width: 767px) {
+  .author-page .author {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .blog-top-img img {
+    width: 100%;
+  }
+  .first-post-thumbnail img {
+    width: 100%;
+  }
+}

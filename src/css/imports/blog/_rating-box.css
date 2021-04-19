@@ -1,0 +1,56 @@
+.rating-group {
+  display: inline-flex;
+}
+.rating__icon {
+  pointer-events: none;
+}
+.rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+.rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+  padding: 0;
+}
+.rating__label--half {
+  padding-right: 0;
+  z-index: 2;
+  width: 11px;
+  overflow: hidden;
+  margin-left: 0;
+}
+.rating__label.rating__label--half svg {
+  width: 22px;
+}
+.rating__label svg {
+  width: 22px;
+  pointer-events: none;
+  color: orange;
+}
+.rating__icon--none {
+  color: #eee;
+}
+.rating__input:checked ~ .rating__label svg {
+  color: #ddd;
+}
+.rating-group:hover .rating__label svg,
+.rating-group:hover .rating__label--half svg {
+  color: orange;
+}
+.rating__input:hover ~ .rating__label svg,
+.rating__input:hover ~ .rating__label--half svg {
+  color: #ddd;
+}
+.rating-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.rating-box .rating-total {
+  font-size: 15px;
+  margin-left: 8px;
+}

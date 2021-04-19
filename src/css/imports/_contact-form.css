@@ -1,0 +1,45 @@
+.form-control {
+  display: block;
+  width: 100%;
+  color: var(--custom-color-4);
+  margin-bottom: 7px;
+  height: 36px;
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 1.42857;
+  background-image: linear-gradient(var(--custom-color-5), var(--custom-color-5)), linear-gradient(#d2d2d2, #d2d2d2);
+  float: none;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100% - 1px);
+  background-size: 0 2px, 100% 1px;
+  font-weight: 400;
+  transition: background 0s ease-out;
+  outline: 0;
+  transition-duration: 0.3s;
+  box-shadow: none;
+}
+textarea.form-control {
+  height: auto;
+}
+.contactform .form-control:focus {
+  background-size: 100% 2px, 100% 1px;
+}
+.contactform .field {
+  width: 550px;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
+.contactform .field:last-child {
+  margin-bottom: 0;
+}
+form[name="contact"] .field button {
+  background-color: var(--custom-color-5);
+  padding: 15px 25px;
+}
+form[name="contact"] .field button:hover {
+  background-color: var(--custom-color-6);
+}

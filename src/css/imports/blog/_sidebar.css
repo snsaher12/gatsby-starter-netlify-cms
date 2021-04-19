@@ -1,0 +1,141 @@
+.sidebar {
+  height: 100%;
+}
+.toc-sidebar {
+  font-size: 95%;
+  padding-bottom: 5px;
+  background-color: var(--custom-color-2);
+  overflow: hidden;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  position: sticky;
+  display: block;
+}
+.toc-sidebar:empty {
+  display: none;
+}
+.toc-sidebar .toctitle {
+  text-align: center;
+  padding: 5px 0;
+  background-color: var(--custom-color-3);
+  color: var(--custom-color-8);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0 !important;
+}
+.toc-sidebar ul {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 0.3em 0;
+  margin-bottom: 0;
+}
+.toc-sidebar li {
+  font-weight: 600;
+  margin-bottom: 0.1em;
+  list-style: disc;
+}
+.toc-sidebar a {
+  text-decoration: none;
+  background: 0 0;
+}
+.toc-sidebar a:visited {
+  color: var(--custom-color-6);
+}
+.toc-top a {
+  font-weight: 500;
+  font-size: 15px;
+}
+/* purgecss ignore */
+.toc-sidebar ul .toclevel-2 {
+  margin: 0 0 0 2em;
+}
+.posts-sidebar {
+  font-size: 95%;
+  background-color: var(--custom-color-2);
+  overflow: hidden;
+  margin-bottom: 10px !important;
+}
+.posts-sidebar p {
+  text-align: center;
+  padding: 5px 0;
+  background-color: var(--custom-color-3);
+  color: var(--custom-color-8);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px !important;
+}
+.posts-sidebar ul {
+  margin: 0;
+  list-style: none;
+  padding: 0 7px 20px;
+}
+.posts-sidebar li:last-child a {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.sidebar-btn {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: var(--custom-color-7);
+  background: var(--custom-color-5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.site-info {
+  background-color: var(--custom-color-2);
+  padding: 7px 15px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1024px) and (max-width: 1403px) {
+  .toc-sidebar {
+    top: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .sidebar {
+    margin-top: 15px;
+  }
+  .toc-sidebar {
+    position: fixed;
+    top: 90px;
+    left: -50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-height: calc(100vh - 90px);
+    margin-bottom: 0;
+    transition: 0.3s all ease-out;
+    overflow-y: scroll;
+    z-index: 10;
+  }
+  .active + .toc-sidebar {
+    left: 50%;
+  }
+  .toc-sidebar li:not(.r-s-top-p) {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 7px;
+  }
+  .toc-sidebar li:not(.r-s-top-p) a {
+    display: block;
+    padding: 5px;
+  }
+  /* purgecss ignore */
+  .toc-sidebar ul .toclevel-2 {
+    margin-bottom: 7px;
+    list-style-position: inside;
+    list-style: none;
+  }
+}
+@media (min-width: 1024px) {
+  .sidebar-btn {
+    display: none;
+  }
+}
