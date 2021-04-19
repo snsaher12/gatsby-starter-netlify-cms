@@ -1,0 +1,21 @@
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+.cache/
+# Build directory
+public/
+static/admin/*.bundle.*
+.DS_Store
+yarn-error.log
+static/image/category/*.webp
+static/image/front-first/*.webp
+static/image/front-right/*.webp
+static/image/latest/*.webp
+static/image/post/*.webp
+static/image/post-first/*.webp
+static/image/post-latest/*.webp
+static/image/sidebar/*.webp
+static/image/table/*.webp
+.env
+# Local Netlify folder
+.netlify
